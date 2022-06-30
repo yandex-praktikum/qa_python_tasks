@@ -15,7 +15,7 @@ driver.get("https://qa-mesto.praktikum-services.ru/")
 # Кликни по изображению профиля
 driver.find_element(...)...
 
-# В поле ссылки на изображение введи ссылку
+# Введи ссылку на изображение
 driver.find_element(...)....
 
 # Сохрани новое изображение
