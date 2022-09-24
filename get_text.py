@@ -1,7 +1,7 @@
-from selenium.webdriver.common.by import By
 from selenium import webdriver
-from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.support.wait import WebDriverWait
 
 driver = webdriver.Chrome()
 driver.get("https://qa-mesto.praktikum-services.ru/")
@@ -18,8 +18,7 @@ driver.get("https://qa-mesto.praktikum-services.ru/")
 # Добавь явное ожидание для загрузки страницы
 WebDriverWait(...).until(...)
 
-# Найди кнопку и получи её текст
-text = ...
-print(("Текст кнопки: " + text))
+# Найди кнопку, получи её текст и проверь, что он равен 'Выйти'
+assert ...
 
 driver.quit()
