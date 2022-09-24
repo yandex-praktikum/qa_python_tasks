@@ -1,7 +1,7 @@
-from selenium.webdriver.common.by import By
 from selenium import webdriver
-from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.support.wait import WebDriverWait
 
 driver = webdriver.Chrome()
 driver.get("https://qa-mesto.praktikum-services.ru/")
@@ -20,7 +20,11 @@ driver.get("https://qa-mesto.praktikum-services.ru/")
 
 # Найди футер
 element = ...
+
 # Прокрути страницу до футера
 driver.execute_script(...)
+
+# Проверь, что футер содержит текст 'Mesto Russia'
+assert ...
 
 driver.quit()
