@@ -6,8 +6,8 @@ driver.get("https://qa-mesto.praktikum-services.ru/")
 # напиши код для добавления куки
 ...
 
-# выведи на экран добавленную куку
+# Проверь поле value для добавленной куки
 cookie = ...
-print(cookie)
+assert ...
 
 driver.quit()
